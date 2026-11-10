@@ -1,0 +1,301 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "MRN100002",
+        "identifier": [
+          {
+            "value": "MRN100002"
+          }
+        ],
+        "name": [
+          {
+            "family": "SAMPLE",
+            "given": [
+              "JORDAN"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1962-09-30"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "LAB5002",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "UEC",
+              "display": "Urea, Electrolytes, Creatinine"
+            }
+          ],
+          "text": "Urea, Electrolytes, Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/MRN100002"
+        },
+        "effectiveDateTime": "2026-11-09T08:40:00+08:00",
+        "result": [
+          {
+            "reference": "Observation/LAB5002-1"
+          },
+          {
+            "reference": "Observation/LAB5002-2"
+          },
+          {
+            "reference": "Observation/LAB5002-3"
+          },
+          {
+            "reference": "Observation/LAB5002-4"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "LAB5002-1",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2951-2",
+              "display": "Sodium"
+            }
+          ],
+          "text": "Sodium"
+        },
+        "subject": {
+          "reference": "Patient/MRN100002"
+        },
+        "effectiveDateTime": "2026-11-09T08:40:00+08:00",
+        "valueQuantity": {
+          "value": 138.0,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        },
+        "referenceRange": [
+          {
+            "text": "135-145",
+            "low": {
+              "value": 135.0,
+              "unit": "mmol/L"
+            },
+            "high": {
+              "value": 145.0,
+              "unit": "mmol/L"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N",
+                "display": "Normal"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "LAB5002-2",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2823-3",
+              "display": "Potassium"
+            }
+          ],
+          "text": "Potassium"
+        },
+        "subject": {
+          "reference": "Patient/MRN100002"
+        },
+        "effectiveDateTime": "2026-11-09T08:40:00+08:00",
+        "valueQuantity": {
+          "value": 6.8,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        },
+        "referenceRange": [
+          {
+            "text": "3.5-5.2",
+            "low": {
+              "value": 3.5,
+              "unit": "mmol/L"
+            },
+            "high": {
+              "value": 5.2,
+              "unit": "mmol/L"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "HH",
+                "display": "Critical high"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "LAB5002-3",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2160-0",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/MRN100002"
+        },
+        "effectiveDateTime": "2026-11-09T08:40:00+08:00",
+        "valueQuantity": {
+          "value": 145.0,
+          "unit": "umol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "umol/L"
+        },
+        "referenceRange": [
+          {
+            "text": "60-110",
+            "low": {
+              "value": 60.0,
+              "unit": "umol/L"
+            },
+            "high": {
+              "value": 110.0,
+              "unit": "umol/L"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "LAB5002-4",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "33914-3",
+              "display": "eGFR"
+            }
+          ],
+          "text": "eGFR"
+        },
+        "subject": {
+          "reference": "Patient/MRN100002"
+        },
+        "effectiveDateTime": "2026-11-09T08:40:00+08:00",
+        "valueQuantity": {
+          "value": 42.0,
+          "unit": "mL/min/1.73m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "mL/min/1.73m2"
+        },
+        "referenceRange": [
+          {
+            "text": ">60",
+            "low": {
+              "value": 60.0,
+              "unit": "mL/min/1.73m2"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L",
+                "display": "Low"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
